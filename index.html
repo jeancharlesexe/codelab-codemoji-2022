@@ -1,0 +1,84 @@
+<!--
+    Author: Jean Charles
+    Github: https://github.com/JeanCharlesss
+    Linkedin: https://www.linkedin.com/in/JeanCharlesss/
+    Discord: Sayken#0017
+    Date: 01/16/2023
+    Source challenge: Codelândia - https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codelândia?node-id=0%3A1&t=QcIvMeodH5crokwd-0
+    Challenge: 08 - level Junior
+    "Desiring is the first step towards achieving our dreams." ~Unknown
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMoji</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/41960ad43e.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#">CodeMoji</a>
+        <nav>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button>Fazer login</button>
+            <button><i class="fa-regular fa-user"></i></button>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="menu-container">
+            <header class="menu-header">
+                <h2><a href="#">Apple</a></h2>
+            </header>
+            <section class="menu-content">
+                <h1>
+                    Melhor site para <br>
+                    criar memoji. <br>
+                    Fácil, simples e rápido.
+                </h1>
+            </section>
+            <footer class="menu-footer">
+                <button>Criar memoji</button>
+                <button>Ver biblioteca</button>
+            </footer>
+        </article>
+        <div class="emoji-container">
+            <div class="emoji-top">
+                <img src="./assets/img/emoji1.svg" alt="first emoji" draggable="false" class="element-1">
+                <img src="./assets/img/emoji2.svg" alt="second emoji" draggable="false" class="element-2">
+            </div>
+            <div class="emoji-down">
+                <img src="./assets/img/emoji3.svg" alt="third emoji" draggable="false" class="element-3">
+                <img src="./assets/img/emoji4.svg" alt="fourth emoji" draggable="false" class="element-4">
+                <img src="./assets/img/emoji5.svg" alt="fifth emoji" draggable="false" class="element-5">
+            </div>
+        </div>
+        <article class="comment-container">
+            <section class="bill-content">
+                <h3>Bill Gates</h3>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque nisl quis viverra tincidunt. ”</p>
+            </section>
+            <section class="steve-content">
+                <h3>Steve Jobs</h3>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque nisl quis viverra tincidunt. ”</p>
+            </section>
+        </article>
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+                origin: 'top',
+                distance: '10px',
+                duration: 2000,
+                reset: false
+        });
+
+        ScrollReveal().reveal('.menu-container', { delay: 50 });
+        ScrollReveal().reveal('.emoji-container', { delay: 100 });
+        ScrollReveal().reveal('.comment-container', { delay: 100 });
+    </script>
+</body>
+</html>
